@@ -28,7 +28,7 @@
                 </div>
                 <!-- 햄버거 메뉴 버튼 (모바일용 오른쪽) -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                         <span class="sr-only">Open main menu</span>
                         <!-- Icon when menu is closed -->
                         <svg id="menu-closed-icon" class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -73,23 +73,23 @@
                 <form id="customer-form" class="mt-8 space-y-6">
                      <div>
                         <label for="name" class="text-sm font-medium text-gray-700">가입자 이름</label>
-                        <input id="name" name="name" type="text" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="이름 입력">
+                        <input id="name" name="name" type="text" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="이름 입력">
                     </div>
                     <div>
                         <label for="phone" class="text-sm font-medium text-gray-700">가입자 연락처</label>
-                        <input id="phone" name="phone" type="tel" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="'-' 없이 숫자만 입력">
+                        <input id="phone" name="phone" type="tel" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="'-' 없이 숫자만 입력">
                     </div>
                     <div>
                         <label class="text-sm font-medium text-gray-700">주민등록번호</label>
                         <div class="flex items-center space-x-2 mt-1">
-                            <input id="resident-number1" name="resident-number1" type="text" maxlength="6" required class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="앞 6자리">
+                            <input id="resident-number1" name="resident-number1" type="text" maxlength="6" required class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="앞 6자리">
                             <span class="text-gray-500">-</span>
-                            <input id="resident-number2" name="resident-number2" type="password" maxlength="7" required class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="뒤 7자리">
+                            <input id="resident-number2" name="resident-number2" type="password" maxlength="7" required class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="뒤 7자리">
                         </div>
                     </div>
                     <div>
                         <label for="email" class="text-sm font-medium text-gray-700">이메일</label>
-                        <input id="email" name="email" type="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="이메일을 입력해 주세요">
+                        <input id="email" name="email" type="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="이메일을 입력해 주세요">
                     </div>
                     <div>
                         <label for="address-search" class="text-sm font-medium text-gray-700">설치 주소</label>
@@ -102,7 +102,7 @@
                         <input type="hidden" id="address" name="address" required>
                         <div id="address-details" class="mt-2 space-y-2 hidden">
                              <input type="text" id="selected-address" readonly class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm bg-gray-100 focus:outline-none sm:text-sm">
-                             <input type="text" id="detail-address" name="detail-address" placeholder="상세 주소를 입력하세요" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                             <input type="text" id="detail-address" name="detail-address" placeholder="상세 주소를 입력하세요" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                         </div>
                     </div>
                     
@@ -112,11 +112,11 @@
                         <fieldset class="mt-2">
                             <div class="flex items-center space-x-4">
                                 <div class="flex items-center">
-                                    <input id="payment-bank" name="payment-method" type="radio" value="계좌(자동이체)" checked class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                    <input id="payment-bank" name="payment-method" type="radio" value="계좌(자동이체)" checked class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                     <label for="payment-bank" class="ml-2 block text-sm text-gray-900">계좌(자동이체)</label>
                                 </div>
                                 <div class="flex items-center">
-                                    <input id="payment-card" name="payment-method" type="radio" value="카드" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500">
+                                    <input id="payment-card" name="payment-method" type="radio" value="카드" class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                     <label for="payment-card" class="ml-2 block text-sm text-gray-900">카드</label>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                     <!-- 계좌 정보 (사은품 수령 정보) -->
                     <div id="bank-info-section">
                          <h3 class="text-sm font-medium text-gray-700">사은품 수령 정보</h3>
-                        <select id="bank-name" name="bank-name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        <select id="bank-name" name="bank-name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                             <option value="">은행을 선택해 주세요.</option>
                             <option value="국민은행">국민은행</option>
                             <option value="신한은행">신한은행</option>
@@ -176,8 +176,8 @@
                             <option value="카카오페이증권">카카오페이증권</option>
                             <option value="이베스트증권">이베스트증권</option>
                         </select>
-                        <input id="bank-account" name="bank-account" type="text" required class="mt-2 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="가입자 명의 계좌번호">
-                         <div class="mt-4 bg-blue-50 p-3 rounded-md text-center text-sm text-blue-700">
+                        <input id="bank-account" name="bank-account" type="text" required class="mt-2 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="가입자 명의 계좌번호">
+                         <div class="mt-4 bg-indigo-50 p-3 rounded-md text-center text-sm text-indigo-700">
                             <p>사은품 받는 계좌와 동일한 계좌가 등록돼요.</p>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                     <div id="card-info-section" class="hidden space-y-4">
                          <div>
                             <label for="card-company" class="text-sm font-medium text-gray-700">카드사</label>
-                             <select id="card-company" name="card-company" class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                             <select id="card-company" name="card-company" class="mt-1 block w-full px-3 py-2 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
                                 <option value="">가입자 명의의 카드사</option>
                                 <option value="현대카드">현대카드</option>
                                 <option value="국민카드">국민카드</option>
@@ -208,16 +208,16 @@
                         </div>
                         <div>
                             <label for="card-number" class="text-sm font-medium text-gray-700">카드번호</label>
-                            <input id="card-number" name="card-number" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="카드번호">
+                            <input id="card-number" name="card-number" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="카드번호">
                         </div>
                         <div>
                             <label for="card-validation" class="text-sm font-medium text-gray-700">유효기간</label>
-                            <input id="card-validation" name="card-validation" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="MMYY">
+                            <input id="card-validation" name="card-validation" type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="MMYY">
                         </div>
                     </div>
     
                     <div>
-                        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             등록하기
                         </button>
                     </div>
@@ -256,7 +256,7 @@
         <div class="relative mx-auto p-5 border w-full max-w-sm shadow-lg rounded-md bg-white">
             <div class="mt-3 text-center">
                 <p id="notification-message" class="text-base leading-6 font-medium text-gray-900 mb-4"></p>
-                <button id="notification-close" class="px-4 py-2 bg-blue-600 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button id="notification-close" class="px-4 py-2 bg-indigo-600 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">
                     확인
                 </button>
             </div>
